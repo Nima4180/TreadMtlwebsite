@@ -1,92 +1,82 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-h1, h2, h3 {
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-/* Header Styles */
 header {
     background-color: #333;
-    padding: 10px 20px;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px 0;
+    text-align: center;
 }
 
 header nav ul {
     list-style-type: none;
-    display: flex;
+    padding: 0;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin-right: 20px;
 }
 
-/* Hero Section */
-.hero {
-    position: relative;
-    text-align: center;
+header nav ul li a {
     color: white;
+    text-decoration: none;
 }
 
-.hero-image {
-    width: 100%;
-    height: auto;
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* Free Shipping Section */
-#free-shipping {
-    background-color: #f4f4f4;
-    padding: 20px;
+#hero {
     text-align: center;
+    background-color: #1e90ff;
+    color: white;
+    padding: 50px 0;
 }
 
-/* Brands Gallery */
-.brands-gallery {
-    display: flex;
-    justify-content: center;
+#contact {
+    padding: 50px;
+    background-color: #fff;
 }
 
-.brands-gallery img {
-    width: 150px;
-    margin: 0 10px;
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-/* About Us Section */
-#about-us {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+.form-group {
+    margin-bottom: 20px;
 }
 
-#about-us .about-us-content,
-#about-us .about-categories {
-    width: 45%;
+label {
+    font-size: 16px;
+    display: block;
 }
 
-/* Footer */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
 footer {
     background-color: #333;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
 }
