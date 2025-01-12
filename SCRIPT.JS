@@ -1,20 +1,10 @@
-// Language Toggle
-const langToggle = document.getElementById('lang-toggle');
-langToggle.addEventListener('click', () => {
-    alert('Language Switch Functionality Will Be Implemented Here');
-});
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-// Tire Search Form Submission
-const tireSearchForm = document.getElementById('tire-search-form');
-tireSearchForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    const carInfo = document.getElementById('car-info').value;
-    window.location.href = `search_results.html?carInfo=${carInfo}`;
-});
-
-// Contact Form Submission
-const contactForm = document.getElementById('contact-form');
-contactForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Message Sent! We will get back to you shortly.');
+    if (!name || !email || !message) {
+        event.preventDefault(); // Prevent form submission
+        alert('Please fill out all fields.');
+    }
 });
