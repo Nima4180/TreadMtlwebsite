@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TreadMtl - Your Tire Shop</title>
+    <title>TreadMtl - Tire Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="logo-container">
             <img src="https://github.com/Nima4180/TreadMtlwebsite/blob/main/images/logo.png?raw=true" alt="TreadMtl Logo" class="logo">
         </div>
-
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#cart">Cart</a></li>
-                <li><a href="#" id="lang-toggle">EN | FR</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="my_car.html">My Car</a></li>
+                <li><a href="my_account.html">My Account</a></li>
             </ul>
         </nav>
     </header>
@@ -28,61 +26,53 @@
     <section id="home" class="hero">
         <img src="https://github.com/Nima4180/TreadMtlwebsite/blob/main/images/car_on_road.jpg?raw=true" alt="Car on Road" class="hero-image">
         <div class="hero-content">
-            <h1>Your Trusted Tire Shop</h1>
-            <p>Get the best tires for your car, fast delivery, and amazing deals!</p>
+            <h1>Welcome to TreadMtl</h1>
+            <p>Find your perfect tire for your car with fast delivery!</p>
         </div>
     </section>
 
     <!-- Tire Search Section -->
     <section id="tire-search">
-        <div class="search-container">
-            <h2>Find Your Tire Size</h2>
-            <form id="tire-search-form">
-                <div class="input-group">
-                    <label for="car-info">Enter Your Car Information:</label>
-                    <input type="text" id="car-info" placeholder="Year, Make, Model" required>
-                </div>
-                <button type="submit">Search for Tires</button>
-            </form>
-        </div>
-        <div class="seasons-img">
-            <img src="https://github.com/Nima4180/TreadMtlwebsite/blob/main/images/4_seasons.jpg?raw=true" alt="4 Seasons Tires">
-        </div>
-    </section>
-
-    <!-- Tire Categories -->
-    <section id="categories">
-        <div class="category">
-            <img src="https://github.com/Nima4180/TreadMtlwebsite/blob/main/images/tire_on_truck.jpg?raw=true" alt="LT Tires" class="category-image">
-            <h3>LT Tires</h3>
-        </div>
-        <div class="category">
-            <img src="https://github.com/Nima4180/TreadMtlwebsite/blob/main/images/performance_car.jpg?raw=true" alt="Performance Tires" class="category-image">
-            <h3>Performance Tires</h3>
-        </div>
-    </section>
-
-    <!-- Brands Section -->
-    <section id="brands">
-        <h2>Our Trusted Brands</h2>
-        <img src="https://github.com/Nima4180/TreadMtlwebsite/blob/main/images/all_brands.jpg?raw=true" alt="Tire Brands">
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-            
-            <button type="submit">Send Message</button>
+        <h2>Find Your Tire Size</h2>
+        <form id="tire-search-form">
+            <input type="text" id="car-info" placeholder="Enter Year, Make, Model" required>
+            <button type="submit">Search for Tires</button>
         </form>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Free Shipping & Brands -->
+    <section id="free-shipping">
+        <h2>Enjoy Free Shipping on All Orders</h2>
+        <p>Get your tires delivered within 24-72 hours! Free shipping available on all purchases.</p>
+    </section>
+
+    <section id="brands">
+        <h2>Our Trusted Brands</h2>
+        <div class="brands-gallery">
+            <img src="https://github.com/Nima4180/TreadMtlwebsite/blob/main/images/brand_image_1.jpg?raw=true" alt="Brand 1">
+            <img src="https://github.com/Nima4180/TreadMtlwebsite/blob/main/images/brand_image_2.jpg?raw=true" alt="Brand 2">
+            <img src="https://github.com/Nima4180/TreadMtlwebsite/blob/main/images/brand_image_3.jpg?raw=true" alt="Brand 3">
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about-us">
+        <div class="about-us-content">
+            <h2>About Us</h2>
+            <p>We offer a wide selection of tires with exceptional customer service. At TreadMtl, we make sure your car is equipped with the best tires for your driving needs.</p>
+        </div>
+        <div class="about-categories">
+            <h3>Our Categories</h3>
+            <ul>
+                <li><a href="#">Exclusive</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Tires</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">My Account</a></li>
+            </ul>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 TreadMtl. All Rights Reserved.</p>
     </footer>
